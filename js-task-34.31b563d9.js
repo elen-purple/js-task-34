@@ -672,12 +672,18 @@ var _appJs = require("./js/app.js");
 },{"./js/app.js":"9f5IL"}],"9f5IL":[function(require,module,exports,__globalThis) {
 var _getCardsLayout = require("./get-cards-layout");
 var _setCardsLayout = require("./set-cards-layout");
-let page = 1;
-(0, _getCardsLayout.getCardsLayout)(page).then(({ hits })=>{
+let page;
+if (Object.keys(localStorage).includes("page")) page = Number.parseInt(localStorage.getItem("page"));
+else {
+    page = 1;
+    localStorage.setItem("page", page);
+}
+for(let i = 0; i < page; i += 1)(0, _getCardsLayout.getCardsLayout)(i + 1).then(({ hits })=>{
     (0, _setCardsLayout.setCardsLayout)(hits);
 });
 document.querySelector("#load-btn").addEventListener("click", ()=>{
     page += 1;
+    localStorage.setItem("page", page);
     (0, _getCardsLayout.getCardsLayout)(page).then(({ hits })=>{
         (0, _setCardsLayout.setCardsLayout)(hits);
     });
