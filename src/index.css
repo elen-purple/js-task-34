@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  line-height: 0;
+  display: block;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  display: block;
+  border: none;
+  background-color: transparent;
+}
+
+.cards {
+  padding: 80px 0;
+  background: #999999;
+  background-image: url(./img/left-branches.webp), url(./img/right-branches.webp);
+  background-repeat: repeat-y;
+  background-position: top left, right -400px;
+}
+
+.cards__list {
+  display: flex;
+  margin: 0 auto;
+  row-gap: 28px;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  max-width: 580px;
+}
+
+.cards__item {
+  max-width: 280px;
+  padding: 36px 24px;
+  background: #eee;
+}
+
+.cards__img {
+  height: 150px;
+  width: 232px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.cards__subtitle {
+  color: #191919;
+  font-family: UnifrakturMaguntia;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.cards__infos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.cards__info {
+  color: #191919;
+  font-family: "Didact Gothic";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cards__subbtn {
+  color: #fff;
+  font-family: "Didact Gothic";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #191919;
+}
+
+.cards__btn {
+  color: #fff;
+  font-family: "Didact Gothic";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #191919;
+  max-width: 232px;
+  margin: 0 auto;
+  margin-top: 28px;
+}
