@@ -1,6 +1,7 @@
 import { getCardsLayout } from "./get-cards-layout";
 import { setCardsLayout } from "./set-cards-layout";
 
+
 let page;
 if (Object.keys(localStorage).includes("page")) {
   page = Number.parseInt(localStorage.getItem("page"));

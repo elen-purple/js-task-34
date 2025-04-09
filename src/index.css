@@ -36,7 +36,8 @@ button {
 .cards {
   padding: 80px 0;
   background: #999999;
-  background-image: url(./img/left-branches.webp), url(./img/right-branches.webp);
+  background-image: url(./img/left-branches.webp),
+    url(./img/right-branches.webp);
   background-repeat: repeat-y;
   background-position: top left, right -400px;
 }
@@ -71,6 +72,7 @@ button {
   font-weight: 400;
   line-height: normal;
   margin-bottom: 20px;
+  word-break: break-all;
 }
 
 .cards__infos {
@@ -111,4 +113,100 @@ button {
   max-width: 232px;
   margin: 0 auto;
   margin-top: 28px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.backdrop {
+  background-color: rgba(0, 0, 0, 30%);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  display: flex;
+  width: 868px;
+  height: 403px;
+  padding: 40px 32px;
+  gap: 40px;
+  background-color: #eee;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  line-height: 0;
+}
+
+.modal__dagger {
+  fill: #191919;
+}
+
+.modal__close:hover .modal__dagger {
+  fill: #000;
+}
+
+.madal__img {
+  min-width: 500px;
+  height: 323px;
+  line-height: none;
+  object-fit: cover;
+  background-color: #d9d9d9;
+}
+
+.modal__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modal__title {
+  color: #191919;
+  font-family: UnifrakturMaguntia;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+  width: 264px;
+  word-break: break-all;
+}
+
+.modal__infos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal__info {
+  color: #191919;
+  font-family: "Didact Gothic";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.modal__tags {
+  color: #191919;
+  font-family: "Didact Gothic";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 4px;
 }

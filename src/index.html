@@ -89,6 +89,42 @@
       </ul>
       <button id="load-btn" class="cards__btn" type="button">Load more</button>
     </section>
+    <div id="backdrop" class="backdrop is-hidden">
+      <div class="modal">
+        <button id="close-btn" class="modal__close">
+          <svg class="modal__dagger" width="14" height="13">
+            <use href="./svg/icons.svg#dagger"></use>
+          </svg>
+        </button>
+        <img data-role="img" src="#" alt="" class="madal__img" />
+        <div class="modal__text">
+          <h2 class="modal__title">
+            Owner: <span data-role="title" class="cards__span"></span>
+          </h2>
+          <ul class="modal__infos">
+            <li class="modal__info">
+              Views: <span data-role="views" class="cards__span"></span>
+            </li>
+            <li class="modal__info">
+              Downloads:
+              <span data-role="downloads" class="cards__span"></span>
+            </li>
+            <li class="modal__info">
+              Likes: <span data-role="likes" class="cards__span"></span>
+            </li>
+            <li class="modal__info">
+              Collections:
+              <span data-role="collections" class="cards__span"></span>
+            </li>
+            <li class="modal__info">
+              Tags:
+              <p data-role="tags" class="modal__tags">
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <script src="./index.js" type="module"></script>
   </body>
 </html>
