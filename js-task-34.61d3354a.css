@@ -69,6 +69,7 @@ button {
 
 .cards__subtitle {
   color: #191919;
+  word-break: break-all;
   margin-bottom: 20px;
   font-family: UnifrakturMaguntia;
   font-size: 24px;
@@ -111,6 +112,102 @@ button {
   padding: 10px 0;
   font-family: Didact Gothic;
   font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.backdrop {
+  z-index: 1000;
+  background-color: #0000004d;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal {
+  background-color: #eee;
+  gap: 40px;
+  width: 868px;
+  height: 403px;
+  padding: 40px 32px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__close {
+  line-height: 0;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+}
+
+.modal__dagger {
+  fill: #191919;
+}
+
+.modal__close:hover .modal__dagger {
+  fill: #000;
+}
+
+.madal__img {
+  min-width: 500px;
+  height: 323px;
+  line-height: none;
+  object-fit: cover;
+  background-color: #d9d9d9;
+}
+
+.modal__text {
+  flex-direction: column;
+  gap: 24px;
+  display: flex;
+}
+
+.modal__title {
+  color: #191919;
+  word-break: break-all;
+  width: 264px;
+  font-family: UnifrakturMaguntia;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.modal__infos {
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+}
+
+.modal__info {
+  color: #191919;
+  font-family: Didact Gothic;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.modal__tags {
+  color: #191919;
+  margin-top: 4px;
+  font-family: Didact Gothic;
+  font-size: 12px;
+  font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
