@@ -156,14 +156,6 @@ button {
   right: 16px;
 }
 
-.modal__dagger {
-  fill: #191919;
-}
-
-.modal__close:hover .modal__dagger {
-  fill: #000;
-}
-
 .madal__img {
   min-width: 500px;
   height: 323px;
